@@ -77,8 +77,8 @@ a:hover {
 
 /* CLASE BASE: Lo que comparten todos */
 .contenedor-sobremi, 
-.experiencia-lab, 
-.proyecto-memebar {
+.experiencia-lab,
+.proyecto-card {
     display: flex;
     align-items: center; /* Casi todos están centrados */
     background-color: var(--color-tarjeta);
@@ -138,14 +138,14 @@ p {
 
 /*SECCIÓN PROYECTOS*/
 
-.proyecto-memebar {
+.proyecto-card {
     flex-direction: row;
     justify-content: center;
     align-items: flex-start; /* El único que alinea al inicio */
     padding: 40px 10px;      /* El único con padding más grande */
 }
 
-.proyecto-memebar img {
+.proyecto-card img {
     width: 500px;
 }
 
