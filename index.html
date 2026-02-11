@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS-->
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Belén Bojorque | Portfolio</title>
+</head>
+<body>
+    <header>
+        <nav class="nav-container">
+            <a href="#" aria-label="Ir al inicio">
+                <img src="./assets/logo_portfolio.webp" alt="Logo del portfolio" class="logo">
+            </a>
+            <ul class="link-container">
+                <li>
+                    <a href="#sobremi" class="link-p">Sobre Mí</a>
+                </li>
+                <li>
+                    <a href="#experiencia" class="link-p">Experiencia Laboral</a>
+                </li>
+                <li>
+                    <a href="#proyectos" class="link-p">Proyectos</a>
+                </li>
+                <li>
+                    <a href="#contacto" class="link-p">Contacto</a>
+                </li>                                            
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="sobremi">
+            <h1>SOBRE MÍ</h1>
+            <div class="contenedor-sobremi">
+                <p>Soy <b>Belén Bojorque</b> de Buenos Aires, Argentina. Estoy experimentando en el área de TI después de muchos años trabajando en Administración.
+                    He comenzado con un curso de Python orientado a objetos mientras participaba en proyectos como Soporte funcional de Odoo. Actualmente me encuentro trabajando en una empresa de software como Soporte de TI para Datamatic Software desde el año 2023.
+                    Desde Octubre de 2025 estoy transitando un curso de Desarrollo Web con HTML, CSS y Bootstrap.</p>
+
+                <img class="foto-perfil" src="./assets/foto_perfil.webp" alt="foto de perfil de belen bojorque">
+            </div>
+        </section>
+        <section id="experiencia">
+            <h2>EXPERIENCIA LABORAL</h2>
+            <div class="experiencia-lab">
+                <div class="job-descrip">
+                    <h3>Soporte Nivel 1</h3>
+                    <h4>Datamatic Software</h4>
+                    <h4>Marzo 2023 - Actualidad</h4>
+                    <ul>
+                        <li>Asistir y capacitar a las empresas que requieran del software, con el fin de facilitar su uso y mejorar su experiencia en la plataforma.</li>
+                        <li>Elaboro reportes e informes precisos que brindan una visión clara y concisa de los hallazgos obtenidos durante el proceso de análisis funcional.</li>
+                        <li>Me involucro activamente en el testing de aplicaciones y sistemas para garantizar su correcto funcionamiento.</li>
+                        <li>Identifico posibles mejoras en las aplicaciones y sistemas durante el proceso de testing.</li>
+                    </ul>
+                </div>
+                    <img class="foto-perfil" src="./assets/imagen_soporte.jpg" alt="imagen de empleado de soporte">
+            </div>
+            <div class="experiencia-lab">
+                <div class="job-descrip">
+                    <h3>Soporte Funcional</h3>                    
+                    <h4>Trabajo Independiente</h4>
+                    <h4>Diciembre 2021 - Julio 2022</h4>
+                    <ul>
+                        <li>Implementación de sistema ERP Odoo, asistir al programador en el requerimiento del cliente y hace testeos asegurando el correcto funcionamiento del sistema.</li>
+                        <li>Implementación de sistema Odoo a la empresa para un mejor manejo de información. Mi tarea consiste en asistir al programador con los requerimientos del cliente y testear los cambios realizados por el programador. Como tarea adicional he confeccionado un manual de procedimiento para un uso correcto del sistema.</li>
+                    </ul>
+                </div>
+                <img class="foto-perfil" src="./assets/manos_teclado.webp" alt="imagen de manos en el teclado.">
+            </div> 
+        </section>
+        <section id="proyectos">
+            <h2>PROYECTOS</h2>
+            <div class="proyecto-memebar">
+                <img src="./assets/portada_meme_bar.webp" alt="imagen proyecto meme bar">
+                <div class="descrip-project">
+                    <h4>MEME BAR</h4>
+                    <p>Mi primer proyecto. Proyecto final para el curso de Desarrollo web en CoderHouse.
+                    ¿Qué me impulsó a realizar esta página web? El meme bar forma parte de otro proyecto que me gustaría realizar. Tener mi propio bar/cafetería que incluye dos cosas que nunca deberían faltar... memes para divertirme, pasarla bien y comer una gran merienda.</p>
+                    <a class="boton-repo" href="https://github.com/bojorqueluciabelen-hub/memebar.git" target="_blank" rel="noopener noreferrer">Ver Repositorio</a>
+                </div>
+            </div>
+        </section>
+        <section id="contacto">
+            <h2>CONTACTO</h2>
+            <form class="form-container" action="enviar-datos" method="post">
+                <label for="nombre">Nombre y Apellido / Empresa: </label>
+                <input class="campo-form" type="text" name="nombre" id="nombre" required>
+                <label for="telefono">Teléfono: </label>
+                <input class="campo-form" type="telefono" name="telefono" id="telefono">
+                <label for="email">Email: </label>
+                <input class="campo-form" type="email" name="email" id="email" required>
+                <label for="consulta">Deje su consulta: </label>
+                <textarea class="campo-consulta" name="consulta" id="consulta"></textarea>
+                <button class="boton-form" type="submit">Enviar</button>
+            </form>
+        </section>        
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="redes-content">
+                <div>
+                    <img class="icon-redes" src="./assets/icono_email.webp" alt="icono de email">
+                    <a href="mailto:bojorqueluciabelen@gmail.com">bojorqueluciabelen@gmail.com</a>
+                </div>
+                <div>
+                    <img class="icon-redes" src="./assets/icono_linkedin.webp" alt="icono de linkedin">
+                    <a href="https://www.linkedin.com/in/belenbojorque/" target="_blank" rel="noopener noreferrer">
+                        LinkedIn: belenbojorque
+                    </a>
+                </div>
+            </div>
+            <p class="copyright">&copy; 2026 Belén Bojorque. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
