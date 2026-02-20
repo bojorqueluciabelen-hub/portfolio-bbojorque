@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 /*Fuente nunito*/
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
@@ -11,6 +12,11 @@
     --sombra-principal: 0px 10px 30px rgba(0, 0, 0, 0.4);
     --gap-standard: 20px;
     --padding-card: 20px 10px;
+}
+
+html {
+    scroll-behavior: smooth;
+    
 }
 
 body {
@@ -31,14 +37,13 @@ header {
     background-color: #ca9db9;
     width: 100%;
 }
+section {
+    scroll-margin-top: 50px;
+}
 
 
 /*ENCABEZADO*/
 
-/*.logo {
-    width: 150px;
-    height: 105px;
-}*/
 
 .nav-container {
     display: flex;
@@ -58,12 +63,6 @@ header {
     margin-right: 10px;
 }
 
-.link-p {
-    text-decoration: none;
-    color: black;
-    transition: all 0.3s ease; /* Suaviza cualquier cambio */
-}
-
 .link-container li {
     list-style-type: none;
 }
@@ -71,22 +70,23 @@ header {
 a{
     text-decoration: none;
     color: black;
+    transition: 0.3s ease;
 }
 
 a:hover {
     text-shadow: 0.5px 0 0 black;
 }
 
-/* CLASE BASE: Lo que comparten todos */
+/* ESTILADO COMPARTIDO */
 .contenedor-sobremi, 
 .experiencia-lab,
 .proyecto-card {
     display: flex;
-    align-items: center; /* Casi todos están centrados */
+    align-items: center;
     background-color: var(--color-tarjeta);
     box-shadow: var(--sombra-principal);
     padding: var(--padding-card);
-    margin: 30px 20px; /* Unificamos márgenes para consistencia */
+    margin: 30px 20px;
     gap: var(--gap-standard);
 }
 
@@ -109,8 +109,7 @@ h1 {
 }
 
 .contenedor-sobremi p {
-    width: 600px;
-    height: 200px;
+    max-width: 600px;
     margin-right: 50px;
 }
 
@@ -156,14 +155,14 @@ h1 {
 }
 
 .descrip-project p {
-    width: 500px;
-    height: 120px;
+    max-width: 500px;
     padding-top: 15px;
     padding-left: 3px;
     font-size: 15px;
 }
 
-.boton-repo {
+.boton-repo,
+.boton-form {
     display:inline-block;
     background-color: rgb(150, 149, 149);
     border-radius: 3px;
@@ -183,8 +182,7 @@ h1 {
     justify-content: center;
     gap: 10px;
     padding: 20px 30px;
-    margin-left: 250px;
-    margin-bottom: 50px;
+    margin: 0 auto 50px auto;
     border: 2px solid rgb(110, 110, 110);
 }
 
