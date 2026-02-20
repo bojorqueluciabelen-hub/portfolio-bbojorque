@@ -8,7 +8,7 @@
 /*font-family: "Nunito", sans-serif;*/
 
 :root {
-    --color-tarjeta: #faa7dd;
+    --color-tarjeta: #ffffff; /*color anterior: faa7dd*/
     --sombra-principal: 0px 10px 30px rgba(0, 0, 0, 0.4);
     --gap-standard: 20px;
     --padding-card: 20px 10px;
@@ -20,7 +20,8 @@ html {
 }
 
 body {
-    background-color: #f4d4e8;
+    background-color: #f7f5f9;
+    /*background-color: #f4d4e8;*/
     font-family: "Nunito", sans-serif;
 }
 
@@ -34,7 +35,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
-    background-color: #ca9db9;
+    background-color: #c084b4 ; /*#ca9db9*/
     width: 100%;
 }
 section {
@@ -122,7 +123,7 @@ h1 {
 
 .job-descrip ul li {
     width: 700px;
-    padding: 20px;
+    padding: 5px;
     list-style-type:disc;
 }
 
@@ -205,7 +206,7 @@ h1 {
 /*FOOTER*/
 
 .footer-content {
-    background-color: #ca9db9;
+    background-color: #c084b4 ; /*#ca9db9*/
     color: black;
     text-align: center;
     padding: 20px;
