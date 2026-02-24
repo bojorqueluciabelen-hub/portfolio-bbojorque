@@ -81,6 +81,7 @@ a:hover {
 /* ESTILADO COMPARTIDO */
 .contenedor-sobremi, 
 .experiencia-lab,
+.educacion-card,
 .proyecto-card {
     display: flex;
     align-items: center;
@@ -112,6 +113,21 @@ h1 {
 .contenedor-sobremi p {
     max-width: 600px;
     margin-right: 50px;
+}
+
+/*SECCIÓN EDUCACIÓN*/
+.educacion-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 30px;
+    gap: 30px;
+}
+
+.edu-coder,
+.edu-sql {
+    margin-left: 50px;
 }
 
 /*SECCIÓN EXPERIENCIA LABORAL*/
