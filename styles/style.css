@@ -81,6 +81,9 @@ a:hover {
 
 /*Header - vista móvil*/
 @media (max-width: 767px) {
+    .nav-container {
+        flex-direction: column;
+    }
     .link-container {
         flex-direction: column;
         justify-content: center;
@@ -122,6 +125,8 @@ h1 {
     }
     .contenedor-sobremi p{
         max-width: 100%;
+        margin-left: 10%;
+        font-size: 22px;
     }
 }
 
@@ -157,16 +162,28 @@ h1 {
 }
 
 .job-descrip ul li {
-    width: 700px;
+    width: 80%;
+    margin-left: 3%;
     padding: 5px;
     list-style-type:disc;
 }
 
 @media (max-width: 767px) {
+    .experiencia-lab {
+        flex-direction: column;
+        margin-left: 5%;
+    }
     .job-descrip ul li {
-        max-width: 100%;
+        max-width: 97%;
+        margin-left: 10%;
+        font-size: 22px;
+    }
+    .experiencia-lab h3, h4 {
+        font-size: 25px;
+        margin-left: 5%;       
     }
 }
+
 
 .job-descrip h3 {
     margin-top: 10px;
@@ -201,6 +218,20 @@ h1 {
     padding-top: 15px;
     padding-left: 3px;
     font-size: 15px;
+}
+@media (max-width: 767px) {
+    .proyecto-card {
+        flex-direction: column;
+    }
+    .proyecto-card img {
+        display: none;
+    }
+    .descrip-project h4 {
+        font-size: 25px;
+    }
+    .descrip-project p {
+        font-size: 20px;
+    }
 }
 
 .boton-repo,
@@ -242,6 +273,15 @@ h1 {
 
 .campo-consulta {
     height: 100px;
+}
+
+@media (max-width: 767px) {
+    .form-container {
+        width: 90%;
+    }
+    .boton-form {
+        width: 25%;
+    }
 }
 
 /*FOOTER*/
