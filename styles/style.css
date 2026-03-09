@@ -78,6 +78,16 @@ a:hover {
     text-shadow: 0.5px 0 0 black;
 }
 
+
+/*Header - vista móvil*/
+@media (max-width: 767px) {
+    .link-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
 /* ESTILADO COMPARTIDO */
 .contenedor-sobremi, 
 .experiencia-lab,
@@ -104,6 +114,15 @@ h1 {
 .contenedor-sobremi {
     flex-direction: row-reverse;
     justify-content: space-around;
+}
+
+@media (max-width: 767px) {
+    .contenedor-sobremi {
+        flex-direction: column-reverse;
+    }
+    .contenedor-sobremi p{
+        max-width: 100%;
+    }
 }
 
 .foto-perfil {
@@ -141,6 +160,12 @@ h1 {
     width: 700px;
     padding: 5px;
     list-style-type:disc;
+}
+
+@media (max-width: 767px) {
+    .job-descrip ul li {
+        max-width: 100%;
+    }
 }
 
 .job-descrip h3 {
